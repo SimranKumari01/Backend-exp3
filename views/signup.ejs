@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Your Account</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="signup-container">
+    <header>
+      <h1>Create Your Account</h1>
+      <p>Join us today and take the first step towards managing your career.</p>
+    </header>
+
+    <form id="signup-form" method="POST" action="/signup">
+      <div class="form-group">
+        <label for="signup-name">Full Name</label>
+        <input type="text" id="signup-name" name="name" placeholder="Enter your full name" required />
+      </div>
+      <div class="form-group">
+        <label for="signup-position">Job Position</label>
+        <input type="text" id="signup-position" name="position" placeholder="Enter your position" required />
+      </div>
+      <div class="form-group">
+        <label for="signup-salary">Expected Salary</label>
+        <input type="number" id="signup-salary" name="salary" placeholder="Enter your salary expectation" step="0.01" required />
+      </div>
+      <button type="submit" class="signup-button">Create Account</button>
+    </form>
+
+    <footer>
+      <p>Already have an account? <a href="/login">Login here</a>.</p>
+    </footer>
+  </div>
+</body>
+</html>
